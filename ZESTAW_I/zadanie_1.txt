@@ -1,0 +1,12 @@
+# Proszę napisać program wypisujący elementy ciągu Fibonacciego mniejsze od miliona.
+
+# rozwiązanie z ćwiczeń
+
+a = 1
+b = 1
+
+while a < 100:
+    print(a)
+    c = a + b
+    a = b
+    b = c
