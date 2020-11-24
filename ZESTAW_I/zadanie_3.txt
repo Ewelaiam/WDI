@@ -1,0 +1,27 @@
+# Proszę napisać program sprawdzający czy istnieje spójny podciąg ciągu Fibonacciego o zadanej sumie
+
+# rozwiązanie z laboratoriów
+
+number = int(input())
+a1 = 1
+b1 = 1
+suma = 0
+b = False
+
+while suma < number:
+    suma += a1
+    b1 = a1 + b1
+    a1 = b1 - a1
+if suma == number:
+    b = True
+else:
+    a2 = 1
+    b2 = 1
+    while suma > number:
+        suma -= a2
+        b2 = a2 + b2
+        a2 = b2 - a2
+    if suma == number:
+        b = True
+
+print(b)
